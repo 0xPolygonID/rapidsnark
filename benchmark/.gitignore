@@ -1,0 +1,9 @@
+# benchmark
+common/ptau
+common/circomlib/
+
+sha256/circuit/compiled
+poseidon/circuit/compiled
+merkletree/circuit/compiled
+
+

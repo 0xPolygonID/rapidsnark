@@ -136,12 +136,9 @@ node tools/request.js <input.json> <circuit>
 
 ## Benchmark
 
-This prover parallelizes as much as it can the proof generation.
+This section aims to provide insight into the performance and cost of widely-used proofs with rapidsnark. We are testing the most commonly used circuits with different inputs and scenarios to better understand their behavior under various conditions and explore opportunities for optimization.
 
-The prover is much faster that snarkjs and faster than bellman.
-
-[TODO] Some comparative tests should be done.
-
+Please navigate to the [/benchmark](./benchmark) folder to explore the benchmarking tests.
 
 ## License
 
