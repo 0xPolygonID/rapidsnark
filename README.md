@@ -123,6 +123,24 @@ Files that you need to copy to your XCode project to link against Rapidsnark:
 * build_prover_ios_simulator/src/Debug-iphonesimulator/libfr.a
 * depends/gmp/package_iphone_simulator/lib/libgmp.a
 
+## Using Docker
+
+You might use the Dockerfile avialable on this repository for setting up the build environment and perform the compilation.
+
+To create the docker image, execute:
+
+`docker image build -t rapidsnark .`
+
+The image compiles rapidsnark and libgpm for host x86_64.
+
+You can create a new container and access to bash (source code available in /src directory).
+
+`docker run -it rapidsnark`
+
+Then you can extract the compiled files by executing the following docker command:
+
+`docker cp <container_id>:/src/package rapidsnark_package`
+
 ## Building proof
 
 You have a full prover compiled in the build directory.
